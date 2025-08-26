@@ -1,0 +1,135 @@
+body{
+    background-color: black;
+}
+.hero {
+    background-color: black;
+    min-height: 50vh; 
+    width: 100%;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;             
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+}
+.hero-content {
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.hero-image {
+    height: 500px;
+    width: auto;
+}
+.hero-image-2{
+    height: 500px;
+    width: auto;
+    display: none;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image {
+        width: 80%;
+        max-width: 320px;
+        margin-bottom: 1rem;
+        display: none;
+    }
+    .hero-image-2 {
+        width: 80%;
+        max-width: 320px;
+        margin-bottom: 1rem;
+        display: inline;
+    }
+}
+#highlight{
+    background-color: greenyellow;
+    color: black
+}
+@keyframes color-change-1 {
+    0%{color: blue}
+    20%{color: red}
+    40%{color: rgb(0, 255, 0)}
+    60%{color: yellow}
+    80%{color: aqua}
+    100%{color: blue}
+}
+#color-change{
+    animation: color-change-1 4s infinite;
+}
+h2{
+    color: white;
+    text-align: center;
+}
+.download-links{
+    color: white;
+    text-align: center;
+}
+@keyframes color-change-2 {
+    0%{border-color: blue;}
+    50%{border-color: aqua;}
+    100%{border-color: blue}
+}
+.box{
+    animation: color-change-2 4s infinite;
+    border: 2px solid blue;
+    border-radius: 50PX;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+}
+.download-link:hover{
+    background-color: #3DDC84;
+    border: #3DDC84;
+    border-radius: 100px;
+    display: inline-block;
+    i{
+        color: black
+    }
+    #install_text{
+        color: black
+    }
+}
+
+.download-link:active{
+    background-color: #ff0000;
+    border: #00eeff;
+    border-radius: 100px;
+    display: inline-block;
+    i{
+        color: black
+    }
+    #install_text{
+        color: black
+    }
+}
+
+@media (max-width: 768px) {
+.download-links {
+        flex-direction: column;
+        align-items: center;
+    }}
+
+a{
+    text-decoration: none;
+}
