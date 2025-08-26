@@ -133,3 +133,12 @@ h2{
 a{
     text-decoration: none;
 }
+footer{
+    background-color: gray;
+    text-align: center;
+    line-height: 3dvh;
+    font-size: x-large;
+}
+footer a{
+    color: blue
+}
